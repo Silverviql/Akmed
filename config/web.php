@@ -46,7 +46,7 @@ $config = [
             'rules' => [
 //                'test' => 'post/test',
 //                'hello' => 'post/hello',
-                '<action>' => 'site/<action>',
+                '<action>' => '<action>',
             ],
         ],
     ],
