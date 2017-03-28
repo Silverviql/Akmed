@@ -45,7 +45,7 @@ $config = [
             'showScriptName' => false,
             'rules' => [
 //                'test' => 'post/test',
-//                'hello' => 'post/hello',
+                 'index' => 'site/index',
                 '<action>' => 'site/<action>',
             ],
         ],
