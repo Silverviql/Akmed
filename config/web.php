@@ -44,8 +44,8 @@ $config = [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
-//                'test' => 'post/test',
-                 'login' => 'site/login',
+                'site/error' => 'site/error',
+                'login' => 'views/site/login',
                 '<action>' => 'site/<action>',
             ],
         ],
