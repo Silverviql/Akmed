@@ -20,7 +20,7 @@ class AppAsset extends AssetBundle
     public $css = [
         'font-awesome.min.css',
         'css/style.css',
-        'https://fonts.googleapis.com/css?family=Open+Sans|Raleway|Candal'  //шрифты
+        'https://fonts.googleapis.com/css?family=Open+Sans|Raleway|Candal',
     ];
     public $js = [
         'js/custom.js',
