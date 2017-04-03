@@ -18,8 +18,8 @@ class AppAsset extends AssetBundle
     public $basePath = '@webroot';
     public $baseUrl = '@web';
     public $css = [
-        'font-awesome.min.css',
         'css/style.css',
+        'css/font-awesome.min.css',
         'https://fonts.googleapis.com/css?family=Open+Sans|Raleway|Candal',
     ];
     public $js = [
