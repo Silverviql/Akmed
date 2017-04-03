@@ -12,7 +12,7 @@ use app\assets\AppAsset;
 AppAsset::register($this);
 ?>
 
-<?php $this->beginPage() ?> //Метка yii2
+<?php $this->beginPage() ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,12 +21,12 @@ AppAsset::register($this);
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <?= Html::csrfMetaTags() ?>
     <title><?= Html::encode($this->title) ?></title>
-    <?php $this->head() ?> //Метка yii2
+    <?php $this->head() ?>
 
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 
-<?php $this->beginBody() ?> //Метка yii2
+<?php $this->beginBody() ?>
 
 <!--banner-->
 <section id="banner" class="banner">
@@ -455,15 +455,11 @@ AppAsset::register($this);
 </footer>
 <!--/ footer-->
 
-<script src="js/jquery.min.js"></script>
-<script src="js/jquery.easing.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/custom.js"></script>
-<script src="contactform/contactform.js"></script>
 
-<?php $this->endBody() ?> //Метка yii2
+
+<?php $this->endBody() ?>
 
 </body>
 </html>
 
-<?php $this->endPage() ?> //Метка yii2
+<?php $this->endPage() ?>
