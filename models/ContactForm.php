@@ -20,6 +20,10 @@ use yii\db\ActiveRecord;
 class ContactForm extends ActiveRecord
 {
 
+    public static function tableName()
+    {
+        return 'post';
+    }
 
     /**
      * @return array the validation rules.
