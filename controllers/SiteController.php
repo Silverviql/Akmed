@@ -61,7 +61,16 @@ class SiteController extends Controller
     public function actionIndex()
     {
         return $this->render('index');
+
+        $model = new ContactForm();
+        $model->name = 'Эмиль';
+        $model->email = 'mail@mail.com';
+        $model->subject = 'Эмиль';
+        $model->text = 'Text messedge';
+        $model->save();
     }
+
+
 
     /**
      * Login action.
