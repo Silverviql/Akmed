@@ -67,6 +67,7 @@ class SiteController extends Controller
         $model->email = 'mail@mail.com';
         $model->subject = 'Эмиль';
         $model->text = 'Text messege';
+        $model->verifyCode = '12354';
         $model->save();
 
         $connection = Yii::$app->db;
