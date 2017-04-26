@@ -116,8 +116,18 @@ class SiteController extends Controller
     {
         $model = new ContactForm();
 
+        if($model->save()){
+            Yii::$app->session->setFlash('success', 'Данные приняты');
+            return $this->refresh();
+        }else{
+            Yii::$app->session->setFlash('error', 'Ошибка');
+        }
 
-        if ($model->load(Yii::$app->request->post())
+        $this->view->title = 'Все статьи';
+        return $this->render('test', compact('model'));
+
+
+        /*if ($model->load(Yii::$app->request->post())
             && $model->contact(Yii::$app->params['adminEmail'])) {
             Yii::$app->session->setFlash('contactFormSubmitted');
 
@@ -125,7 +135,7 @@ class SiteController extends Controller
         }
         return $this->render('contact', [
             'model' => $model,
-        ]);
+        ]);*/
     }
 
     /**
