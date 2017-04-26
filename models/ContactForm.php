@@ -47,7 +47,7 @@ class ContactForm extends ActiveRecord
     {
         return [
 
-            [['name', 'subject', 'text', 'body'], 'required'],
+            [['name', 'subject', 'text'], 'required'],
             ['email', 'email'],
         ];
     }
