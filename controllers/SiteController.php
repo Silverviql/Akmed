@@ -74,6 +74,8 @@ class SiteController extends Controller
             echo "Есть подключение к БД";
         else
             echo "Нет подключения к БД";
+
+        Yii::$app->db->createCommand('SELECT 1')->execute();
     }
 
 
