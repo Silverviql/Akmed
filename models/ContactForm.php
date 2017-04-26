@@ -10,14 +10,13 @@ use yii\db\ActiveRecord;
 /**
  * ContactForm is the model behind the contact form.
  */
-/*class ContactForm extends Model
+class ContactForm extends Model
 {
     public $name;
     public $email;
     public $subject;
     public $body;
-    public $verifyCode;*/
-class ContactForm extends Model
+    public $verifyCode;
 {
 
     public static function tableName()
