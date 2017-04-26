@@ -60,14 +60,14 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
-      /*  return $this->render('index');
+       return $this->render('index');
 
         $model = new ContactForm();
         $model->name = 'Эмиль';
         $model->email = 'mail@mail.com';
         $model->subject = 'Эмиль';
         $model->text = 'Text messedge';
-        $model->save();*/
+        $model->save();
 
         $connection = Yii::$app->db;
         if ($connection)
