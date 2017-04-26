@@ -59,7 +59,7 @@ class ContactForm extends ActiveRecord
      */
     public function contact($email)
     {
-        if ($this->validate()) {
+        if ($this->save()) {
             Yii::$app->mailer->compose()
                 ->setTo($email)
                 ->setFrom([$this->email => $this->name])
