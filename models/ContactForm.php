@@ -3,7 +3,7 @@
 namespace app\models;
 
 use Yii;
-//use yii\base\Model;
+use yii\base\Model;
 use yii\db\ActiveRecord;
 
 
@@ -17,7 +17,7 @@ use yii\db\ActiveRecord;
     public $subject;
     public $body;
     public $verifyCode;*/
-class ContactForm extends ActiveRecord
+class ContactForm extends Model
 {
 
     public static function tableName()
