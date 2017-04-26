@@ -118,7 +118,7 @@ class SiteController extends Controller
         $model->name = 'Эмиль';
         $model->email = 'mail@mail.com';
         $model->subject = 'Эмиль';
-        $model->text = 'Отображает данные на форме.';
+        $model->text = 'Оно живое я записывал в индекс данные.';
         $model->save();
 
         if ($model->load(Yii::$app->request->post()) && $model->contact(Yii::$app->params['adminEmail'])) {
