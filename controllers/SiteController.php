@@ -62,12 +62,7 @@ class SiteController extends Controller
     {
        return $this->render('index');
 
-        $model = new ContactForm();
-        $model->name = 'Эмиль';
-        $model->email = 'mail@mail.com';
-        $model->subject = 'Эмиль';
-        $model->text = 'Text messege';
-        $model->save();
+
 
         $connection = Yii::$app->db;
         if ($connection)
@@ -119,6 +114,13 @@ class SiteController extends Controller
      */
     public function actionContact()
     {
+        $model = new ContactForm();
+        $model->name = 'Эмиль';
+        $model->email = 'mail@mail.com';
+        $model->subject = 'Эмиль';
+        $model->text = 'Text messege';
+        $model->save();
+
         $model = new ContactForm();
         if ($model->load(Yii::$app->request->post()) && $model->contact(Yii::$app->params['adminEmail'])) {
             Yii::$app->session->setFlash('contactFormSubmitted');
