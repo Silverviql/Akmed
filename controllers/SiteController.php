@@ -125,7 +125,7 @@ class SiteController extends Controller
             }
         }
         $this->view->title = 'Все статьи';
-        return $this->render('test', compact('model'));
+        return $this->render('contact', compact('model'));
 
 
         /*if ($model->load(Yii::$app->request->post())
