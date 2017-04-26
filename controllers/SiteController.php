@@ -69,12 +69,6 @@ class SiteController extends Controller
         $model->text = 'Text messedge';
         $model->save();
 
-
-        $connection = Yii::$app->db;
-        if ($connection)
-            echo "Есть подключение к БД";
-        else
-            echo "Нет подключения к БД";
     }
 
 
