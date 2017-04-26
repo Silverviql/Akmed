@@ -115,8 +115,9 @@ class SiteController extends Controller
     public function actionContact()
     {
         $model = new ContactForm();
-        if ($model->load(Yii::$app->request->post())}{
-         if($model->save()){
+
+        if ( $model->load(Yii::$app->request->post()) ){
+         if( $model->save()){
             Yii::$app->session->setFlash('success', 'Данные приняты');
             return $this->refresh();
         }else{
