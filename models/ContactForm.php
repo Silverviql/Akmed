@@ -18,10 +18,10 @@ class ContactForm extends ActiveRecord
     public $verifyCode;*/
 
 
-    public static function tableName()
+    /*public static function tableName()
     {
         return 'post';
-    }
+    }*/
 
 
 
