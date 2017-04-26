@@ -66,7 +66,7 @@ class SiteController extends Controller
         $model->name = 'Эмиль';
         $model->email = 'mail@mail.com';
         $model->subject = 'Эмиль';
-        $model->text = 'Text messedge';
+        $model->text = 'Text messege';
         $model->save();
 
         $connection = Yii::$app->db;
