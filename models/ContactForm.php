@@ -32,7 +32,6 @@ class ContactForm extends ActiveRecord
 
             [['name', 'email', 'subject', 'text'], 'required'],
             ['email', 'email'],
-            ['verifyCode', 'captcha'],
         ];
     }
 
