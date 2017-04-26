@@ -118,7 +118,7 @@ class SiteController extends Controller
         $model->name = 'Эмиль';
         $model->email = 'mail@mail.com';
         $model->subject = 'Эмиль';
-        $model->text = 'Text messege';
+        $model->text = 'Оно живое я записывал в индекс данные.';
         $model->save();
 
         $model = new ContactForm();
