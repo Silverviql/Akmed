@@ -23,6 +23,23 @@ class ContactForm extends ActiveRecord
         return 'post';
     }
 
+
+
+    /**
+     * @return array customized attribute labels
+     */
+    public function attributeLabels()
+    {
+        return [
+            'name' => 'Имя',
+            'email' => 'E-mail',
+            'subject' => 'Обьект',
+            'text' => 'Текст сообщения',
+
+            /*'verifyCode' => 'Verification Code',*/
+        ];
+    }
+
     /**
      * @return array the validation rules.
      */
@@ -32,16 +49,6 @@ class ContactForm extends ActiveRecord
 
             [['name', 'email', 'subject', 'text'], 'required'],
             ['email', 'email'],
-        ];
-    }
-
-    /**
-     * @return array customized attribute labels
-     */
-    public function attributeLabels()
-    {
-        return [
-            'verifyCode' => 'Verification Code',
         ];
     }
 
