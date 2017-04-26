@@ -116,12 +116,11 @@ class SiteController extends Controller
     {
         $model = new ContactForm();
         $model->name = 'Эмиль';
-        $model->email = '111';
+        $model->email = 'mail@mail.com';
         $model->subject = 'Эмиль';
         $model->text = 'Оно живое я записывал в индекс данные.';
         $model->save();
 
-        $model = new ContactForm();
         if ($model->load(Yii::$app->request->post()) && $model->contact(Yii::$app->params['adminEmail'])) {
             Yii::$app->session->setFlash('contactFormSubmitted');
 
