@@ -1,8 +1,5 @@
 <?php
 
-/* @var $this yii\web\View */
-/* @var $form yii\bootstrap\ActiveForm */
-/* @var $model app\models\ContactForm */
 
 /*use yii\helpers\Html;
 use yii\bootstrap\ActiveForm;
@@ -76,7 +73,6 @@ $this->params['breadcrumbs'][] = $this->title;
     <?php endif; ?>
 </div>*/
 
-<?php
 /* @var $this \yii\web\View */
 /* @var $content string */
 use yii\helpers\Html;
@@ -86,7 +82,12 @@ use yii\widgets\Breadcrumbs;
 use app\assets\AppAsset;
 use yii\bootstrap\ActiveForm;
 AppAsset::register($this);
+
+$this->title = 'Contact';
+$this->params['breadcrumbs'][] = $this->title;
 ?>
+
+
 
 <?php $this->beginPage() ?>
     <!DOCTYPE html>
@@ -438,7 +439,11 @@ AppAsset::register($this);
                 <div class="col-md-8 col-sm-8 marb20">
                     <div class="contact-info">
 
+                        <div class="site-contact">
+                        <?php if (Yii::$app->session->hasFlash('contactFormSubmitted')): ?>
 
+                        <div class="row">
+                         <div class="col-lg-5">
                         <?php if( Yii::$app->session->hasFlash('success') ): ?>
                             <div class="alert alert-success alert-dismissible" role="alert">
                                 <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
@@ -467,8 +472,9 @@ AppAsset::register($this);
                         <?= Html::submitButton('Отправить', ['class' => 'btn btn-success'])?>
 
                         <?php ActiveForm::end(); ?>
-
-
+                  </div>
+        </div>
+    </div>
                         <h3 class="cnt-ttl">Having Any Query! Or Book an appointment</h3>
                         <div class="space"></div>
                         <div id="sendmessage">Your message has been sent. Thank you!</div>
