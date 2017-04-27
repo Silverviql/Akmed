@@ -490,5 +490,5 @@ $this->params['breadcrumbs'][] = $this->title;
 
     </body>
     </html>
-
+<?php endif; ?>
     <?php $this->endPage() ?>
