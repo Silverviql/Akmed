@@ -55,7 +55,6 @@ $this->params['breadcrumbs'][] = $this->title;
                     </div>
                 <?php endif;?>
 
-
                 <?php $form = ActiveForm::begin(['id' => 'contact-form']); ?>
 
                 <?= $form->field($model, 'name')->textInput(['autofocus' => true]) ?>
@@ -66,10 +65,6 @@ $this->params['breadcrumbs'][] = $this->title;
 
                 <?= $form->field($model, 'text')->textarea(['rows' => 6]) ?>
 
-
-                <div class="form-group">
-                    <?= Html::submitButton('Submit', ['class' => 'btn btn-primary', 'name' => 'contact-button']) ?>
-                </div>
 
                 <?= Html::submitButton('Отправить', ['class' => 'btn btn-success'])?>
 
