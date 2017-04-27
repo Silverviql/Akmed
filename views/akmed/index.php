@@ -361,6 +361,38 @@ AppAsset::register($this);
                 </div>
                 <div class="col-md-8 col-sm-8 marb20">
                     <div class="contact-info">
+
+
+                        <?php if( Yii::$app->session->hasFlash('success') ): ?>
+                            <div class="alert alert-success alert-dismissible" role="alert">
+                                <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <?php echo Yii::$app->session->getFlash('success'); ?>
+                            </div>
+                        <?php endif;?>
+
+                        <?php if( Yii::$app->session->hasFlash('error') ): ?>
+                            <div class="alert alert-danger alert-dismissible" role="alert">
+                                <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <?php echo Yii::$app->session->getFlash('error'); ?>
+                            </div>
+                        <?php endif;?>
+
+                        <?php $form = ActiveForm::begin(['id' => 'contact-form']); ?>
+
+                        <?= $form->field($model, 'name')->textInput(['autofocus' => true]) ?>
+
+                        <?= $form->field($model, 'email') ?>
+
+                        <?= $form->field($model, 'subject') ?>
+
+                        <?= $form->field($model, 'text')->textarea(['rows' => 6]) ?>
+
+
+                        <?= Html::submitButton('Отправить', ['class' => 'btn btn-success'])?>
+
+                        <?php ActiveForm::end(); ?>
+
+
                         <h3 class="cnt-ttl">Having Any Query! Or Book an appointment</h3>
                         <div class="space"></div>
                         <div id="sendmessage">Your message has been sent. Thank you!</div>

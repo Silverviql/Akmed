@@ -74,7 +74,7 @@ class SiteController extends Controller
     }
 
 
-    /*public function actionContact()
+    public function actionContactForm()
     {
         $model = new ContactForm();
 
@@ -87,11 +87,11 @@ class SiteController extends Controller
             }
         }
         $this->view->title = 'Все статьи';
-        return $this->render('contact', compact('model'));
+        return $this->render('index', compact('model'));
 
 
 
-    }*/
+    }
 
 
 
