@@ -4,8 +4,8 @@ $config = [
     'id' => 'basic',
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
-    'defaultRoute' => 'site/index',
-  //  'layout' => 'basic',
+    'defaultRoute' => 'site/contact',
+    'layout' => 'basic',
     'components' => [
         'request' => [
             // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
@@ -43,8 +43,8 @@ $config = [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
-                '/' => 'site/index',
-                '<controller:\w+/?>' => '<controller>/index',
+                '/' => 'site/contact',
+                '<controller:\w+/?>' => '<controller>/contact',
                 '<controller:\w+>/<id:\d+>' => '<controller>/view',
                 '<controller:\w+>/<action:\w+>/<id:\d+>' => '<controller>/<action>',
             ],
