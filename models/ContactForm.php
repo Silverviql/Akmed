@@ -20,7 +20,7 @@ class ContactForm extends ActiveRecord
 
     public static function tableName()
     {
-        return 'post';
+        return 'order';
     }
 
 
