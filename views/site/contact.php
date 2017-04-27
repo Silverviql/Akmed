@@ -364,7 +364,6 @@ $this->params['breadcrumbs'][] = $this->title;
                     <p><i class="fa fa-phone fa-fw pull-left fa-2x"></i>+1 800 123 1234</p>
                 </div>
                 <div class="col-md-8 col-sm-8 marb20">
-                    <div class="contact-info">
 
                         <div class="site-contact">
                         <?php if (Yii::$app->session->hasFlash('contactFormSubmitted')): ?>
