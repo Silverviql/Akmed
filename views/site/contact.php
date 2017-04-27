@@ -386,20 +386,6 @@ $this->params['breadcrumbs'][] = $this->title;
 
                         <?php $form = ActiveForm::begin(['id' => 'contact-form']); ?>
 
-                        <?= $form->field($model, 'name')->textInput(['autofocus' => true]) ?>
-
-                        <?= $form->field($model, 'email') ?>
-
-                        <?= $form->field($model, 'subject') ?>
-
-                        <?= $form->field($model, 'text')->textarea(['rows' => 6]) ?>
-
-
-                        <?= Html::submitButton('Отправить', ['class' => 'btn btn-success'])?>
-
-                        <?php ActiveForm::end(); ?>
-                  </div>
-        </div>
 
                         <h3 class="cnt-ttl">Having Any Query! Or Book an appointment</h3>
                         <div class="space"></div>
@@ -431,6 +417,9 @@ $this->params['breadcrumbs'][] = $this->title;
                 </div>
             </div>
         </div>
+    <?php ActiveForm::end(); ?>
+    </div>
+    </div>
     </section>
     <!--/ contact-->
     <!--footer-->
@@ -502,4 +491,4 @@ $this->params['breadcrumbs'][] = $this->title;
     </body>
     </html>
 
-<?php $this->endPage() ?>
+    <?php $this->endPage() ?>
