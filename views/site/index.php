@@ -360,39 +360,112 @@ AppAsset::register($this);
                     <p><i class="fa fa-phone fa-fw pull-left fa-2x"></i>+1 800 123 1234</p>
                 </div>
                 <div class="col-md-8 col-sm-8 marb20">
-                    <div class="contact-info">
-                        <h3 class="cnt-ttl">Having Any Query! Or Book an appointment</h3>
-                        <div class="space"></div>
-                        <div id="sendmessage">Your message has been sent. Thank you!</div>
-                        <div id="errormessage"></div>
-                        <form action="" method="post" role="form" class="contactForm">
-                            <div class="form-group">
-                                <input type="text" name="name" class="form-control br-radius-zero" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                                <div class="validation"></div>
-                            </div>
-                            <div class="form-group">
-                                <input type="email" class="form-control br-radius-zero" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
-                                <div class="validation"></div>
-                            </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control br-radius-zero" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                                <div class="validation"></div>
-                            </div>
-                            <div class="form-group">
-                                <textarea class="form-control br-radius-zero" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
-                                <div class="validation"></div>
+
+
+
+                    <div class="site-contact">
+                        <h1><?= Html::encode($this->title) ?></h1>
+
+                        <?php if (Yii::$app->session->hasFlash('contactFormSubmitted')): ?>
+
+                            <div class="alert alert-success">
+                                Thank you for contacting us. We will respond to you as soon as possible.
                             </div>
 
-                            <div class="form-action">
-                                <button type="submit" class="btn btn-form">Send Message</button>
+                            <p>
+                                Note that if you turn on the Yii debugger, you should be able
+                                to view the mail message on the mail panel of the debugger.
+                                <?php if (Yii::$app->mailer->useFileTransport): ?>
+                                    Because the application is in development mode, the email is not sent but saved as
+                                    a file under <code><?= Yii::getAlias(Yii::$app->mailer->fileTransportPath) ?></code>.
+                                                                                                                        Please configure the <code>useFileTransport</code> property of the <code>mail</code>
+                                    application component to be false to enable email sending.
+                                <?php endif; ?>
+                            </p>
+
+                        <?php else: ?>
+
+                            <p>
+                                If you have business inquiries or other questions, please fill out the following form to contact us.
+                                Thank you.
+                            </p>
+
+                            <div class="row">
+                                <div class="col-lg-5">
+
+                                    <?php if( Yii::$app->session->hasFlash('success') ): ?>
+                                        <div class="alert alert-success alert-dismissible" role="alert">
+                                            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                            <?php echo Yii::$app->session->getFlash('success'); ?>
+                                        </div>
+                                    <?php endif;?>
+
+                                    <?php if( Yii::$app->session->hasFlash('error') ): ?>
+                                        <div class="alert alert-danger alert-dismissible" role="alert">
+                                            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                            <?php echo Yii::$app->session->getFlash('error'); ?>
+                                        </div>
+                                    <?php endif;?>
+
+                                    <?php $form = ActiveForm::begin(['id' => 'contact-form']); ?>
+
+                                    <?= $form->field($model, 'name')->textInput(['autofocus' => true]) ?>
+
+                                    <?= $form->field($model, 'email') ?>
+
+                                    <?= $form->field($model, 'subject') ?>
+
+                                    <?= $form->field($model, 'text')->textarea(['rows' => 6]) ?>
+
+
+                                    <?= Html::submitButton('Отправить', ['class' => 'btn btn-success'])?>
+
+                                    <?php ActiveForm::end(); ?>
+
+                                </div>
                             </div>
-                        </form>
+
+                        <?php endif; ?>
+                    </div>
+
+
+
+                    <!--  <div class="contact-info">
+                         <h3 class="cnt-ttl">Having Any Query! Or Book an appointment</h3>
+                         <div class="space"></div>
+                         <div id="sendmessage">Your message has been sent. Thank you!</div>
+                         <div id="errormessage"></div>
+
+
+
+                            <form action="" method="post" role="form" class="contactForm">
+                                 <div class="form-group">
+                                     <input type="text" name="name" class="form-control br-radius-zero" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                                     <div class="validation"></div>
+                                 </div>
+                                 <div class="form-group">
+                                     <input type="email" class="form-control br-radius-zero" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                                     <div class="validation"></div>
+                                 </div>
+                                 <div class="form-group">
+                                     <input type="text" class="form-control br-radius-zero" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                                     <div class="validation"></div>
+                                 </div>
+                                 <div class="form-group">
+                                     <textarea class="form-control br-radius-zero" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                                     <div class="validation"></div>
+                                 </div>
+
+                                 <div class="form-action">
+                                     <button type="submit" class="btn btn-form">Send Message</button>
+                                 </div>
+                             </form>
+                        </div>-->
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <!--/ contact-->
+        </section>
+        <!--/ contact-->
     <!--footer-->
     <footer id="footer">
         <div class="top-footer">
