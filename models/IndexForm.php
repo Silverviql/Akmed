@@ -10,7 +10,7 @@ use yii\db\ActiveRecord;
 /**
  * ContactForm is the model behind the contact form.
  */
-class ContactForm extends ActiveRecord
+class IndexForm extends ActiveRecord
 {
     /*public $email;
     public $subject;
