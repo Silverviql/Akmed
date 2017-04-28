@@ -57,7 +57,7 @@ class ContactForm extends ActiveRecord
      * @param string $email the target email address
      * @return bool whether the model passes validation
      */
-    public function contact($email)
+    public function index($email)
     {
         if ($this->save()) {
             Yii::$app->mailer->compose()
