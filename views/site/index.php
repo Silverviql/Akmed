@@ -407,28 +407,21 @@ AppAsset::register($this);
                     </div>
 
                 <div class="window_wrap">
-
                     <div class="window">
-
-                        <div class="window_close">X</div>
+                        <div class="window__close">X</div>
                         <p>Оставьте ваш телефон<br/>и наш консультант свяжется с вами</p>
-
                         <form id="backPhone" name="backPhone">
-                            <input name="telephone" type="Tel" id="telForm" maxlength="20" placeholder="Введите ваш телефон"/>
+                            <input name="telephone" type="Tel" id="telForm" maxlength="20" placeholder="Введите ваш телефон" required=”required” />
                             <button id="telButton" type="submit" form="backPhone">Заказать звонок</button>
                         </form>
-
                     </div>
 
                 </div>
 
-
-                <div class="telButton anim">
-
+                <div  class="telButton anim">
                     <div class="telButton_border"></div>
                     <div class="telButton_background"><span></span></div>
                     <div class="telButton_hover">Заказать звонок</div>
-
                 </div>
 
                 </div>
