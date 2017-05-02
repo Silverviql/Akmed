@@ -60,18 +60,7 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
-       return $this->render('index');
-
-
-
-        $connection = Yii::$app->db;
-        if ($connection)
-            echo "Есть подключение к БД";
-        else
-            echo "Нет подключения к БД";
-
-        Yii::$app->db->createCommand('SELECT 1')->execute();
-
+       //return $this->render('index');
 
         $model = new ContactForm();
 
