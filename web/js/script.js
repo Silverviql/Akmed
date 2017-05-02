@@ -10,7 +10,8 @@ $(document).ready(function(){
 	
 	
 	p.click(function(event) {
-		
+
+
 		if(event.target == this) {
 			$(this).css({'display':'none'});
 		}
