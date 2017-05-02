@@ -439,32 +439,32 @@ AppAsset::register($this);
                     </div>
                 </div>
             </div>
-
-        <div class="window_wrap">
-
-            <div class="window">
-
-                <div class="window_close">X</div>
-                <p>Оставьте ваш телефон<br/>и наш консультант свяжется с вами</p>
-
-                <form id="backPhone" name="backPhone">
-                    <input name="telephone" type="Tel" id="telForm" maxlength="20" placeholder="Введите ваш телефон"/>
-                    <button id="telButton" type="submit" form="backPhone">Заказать звонок</button>
-                </form>
-
-            </div>
-
-        </div>
-
-
-        <div class="telButton anim">
-
-            <div class="telButton_border"></div>
-            <div class="telButton_background"><span></span></div>
-            <div class="telButton_hover">Заказать звонок</div>
-
-        </div>
         </section>
+
+    <div class="window_wrap">
+
+        <div class="window">
+
+            <div class="window_close">X</div>
+            <p>Оставьте ваш телефон<br/>и наш консультант свяжется с вами</p>
+
+            <form id="backPhone" name="backPhone">
+                <input name="telephone" type="Tel" id="telForm" maxlength="20" placeholder="Введите ваш телефон"/>
+                <button id="telButton" type="submit" form="backPhone">Заказать звонок</button>
+            </form>
+
+        </div>
+
+    </div>
+
+
+    <div class="telButton anim">
+
+        <div class="telButton_border"></div>
+        <div class="telButton_background"><span></span></div>
+        <div class="telButton_hover">Заказать звонок</div>
+
+    </div>
         <!--/ contact-->
     <!--footer-->
     <footer id="footer">
@@ -513,12 +513,6 @@ AppAsset::register($this);
                     <div class="col-md-12 text-center">
                         © Copyright Medilab Theme. All Rights Reserved
                         <div class="credits">
-                            <!--
-                                All the links in the footer should remain intact.
-                                You can delete the links only if you purchased the pro version.
-                                Licensing information: https://bootstrapmade.com/license/
-                                Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Medilab
-                            -->
                             <!-- Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>  -->
                          </div>
                      </div>
