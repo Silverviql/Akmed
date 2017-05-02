@@ -14,7 +14,6 @@ use yii\bootstrap\ActiveForm;
 AppAsset::register($this);
 ?>
 
-
 <?php $this->beginPage() ?>
     <!DOCTYPE html>
     <html lang="en">
