@@ -29,7 +29,7 @@ AppAsset::register($this);
     NavBar::begin([
       //  'brandLabel' => 'My Company',
       //  'brandUrl' => Yii::$app->homeUrl,
-      /*  'options' => [
+        'options' => [
             'class' => 'navbar navbar-default navbar-fixed-top',
         ],
     ]);
@@ -52,8 +52,8 @@ AppAsset::register($this);
                 . '</li>'
             )
         ],
-    ]);*/
-    NavBar::end();
+    ]);
+    NavBar::end();*/
     ?>
 
     <div class="container">
