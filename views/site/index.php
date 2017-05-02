@@ -407,6 +407,14 @@ AppAsset::register($this);
                                 </div>
                             </div>
 
+                        <div class="telButton anim">
+
+                            <div class="telButton_border"></div>
+                            <div class="telButton_background"><span></span></div>
+                            <div class="telButton_hover">Заказать звонок</div>
+
+                        </div>
+
                     </div>
 
 
