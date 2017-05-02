@@ -362,9 +362,6 @@ AppAsset::register($this);
                     <p><i class="fa fa-phone fa-fw pull-left fa-2x"></i>+1 800 123 1234</p>
                 </div>
                 <div class="col-md-8 col-sm-8 marb20">
-
-
-
                     <div class="site-contact">
 
                             <p>
@@ -438,33 +435,33 @@ AppAsset::register($this);
                                  </div>
                              </form>
                         </div>-->
+                    <div class="window_wrap">
+                        <div class="window">
+
+                            <div class="window_close">X</div>
+                            <p>Оставьте ваш телефон<br/>и наш консультант свяжется с вами</p>
+
+                            <form id="backPhone" name="backPhone">
+                                <input name="telephone" type="Tel" id="telForm" maxlength="20" placeholder="Введите ваш телефон"/>
+                                <button id="telButton" type="submit" form="backPhone">Заказать звонок</button>
+                            </form>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="telButton anim">
+                        <div class="telButton_border"></div>
+                        <div class="telButton_background"><span></span></div>
+                        <div class="telButton_hover">Заказать звонок</div>
+
+                    </div>
+
+
                     </div>
                 </div>
             </div>
-        <div class="window_wrap">
-            <div class="col-lg-5">
-            <div class="window">
-
-                <div class="window_close">X</div>
-                <p>Оставьте ваш телефон<br/>и наш консультант свяжется с вами</p>
-
-                <form id="backPhone" name="backPhone">
-                    <input name="telephone" type="Tel" id="telForm" maxlength="20" placeholder="Введите ваш телефон"/>
-                    <button id="telButton" type="submit" form="backPhone">Заказать звонок</button>
-                </form>
-
-            </div>
-
-        </div>
-
-
-        <div class="telButton anim">
-            <div class="col-lg-5">
-            <div class="telButton_border"></div>
-            <div class="telButton_background"><span></span></div>
-            <div class="telButton_hover">Заказать звонок</div>
-
-        </div>
         </section>
         <!--/ contact-->
     <!--footer-->
