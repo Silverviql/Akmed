@@ -4,7 +4,9 @@
     Author: BootstrapMade.com
     Author URL: https://bootstrapmade.com
 */
-
+@import url(//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css);
+@import url(//fonts.googleapis.com/css?family=Open+Sans:700,400,300);
+@import url(//fonts.googleapis.com/css?family=Marvel:400,700);
 body {
 	font-family: 'Open Sans', sans-serif;
 	line-height: 20px;
