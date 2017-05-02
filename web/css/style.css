@@ -487,6 +487,20 @@ contact us
 }
 
 
+.more-features-box-text-icon {
+    float: left;
+    width: 40px;
+    height: 40px;
+    padding-top: 6px;
+    background: #0cb8b6;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    color: #fff;
+    text-align: center;
+}
+
+
 .telButton_hover {
     width: 150px;
     border:3px solid #088789;
