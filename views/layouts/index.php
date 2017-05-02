@@ -33,7 +33,7 @@ AppAsset::register($this);
     <!--banner-->
     <section id="banner" class="banner">
         <div class="bg-color">
-            <nav class="navbar navbar-default navbar-fixed-top">
+           <nav class="navbar navbar-default navbar-fixed-top">
                 <div class="container">
                     <div class="col-md-12">
                         <div class="navbar-header">
@@ -364,47 +364,47 @@ AppAsset::register($this);
                 <div class="col-md-8 col-sm-8 marb20">
                     <div class="site-contact">
 
-                        <p>
-                            If you have business inquiries or other questions, please fill out the following form to contact us.
-                            Thank you.
-                        </p>
+                            <p>
+                                If you have business inquiries or other questions, please fill out the following form to contact us.
+                                Thank you.
+                            </p>
 
-                        <div class="row">
-                            <div class="col-lg-5">
+                            <div class="row">
+                                <div class="col-lg-5">
 
-                                <?php if( Yii::$app->session->hasFlash('success') ): ?>
-                                    <div class="alert alert-success alert-dismissible" role="alert">
-                                        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                        <?php echo Yii::$app->session->getFlash('success'); ?>
-                                    </div>
-                                <?php endif;?>
+                                    <?php if( Yii::$app->session->hasFlash('success') ): ?>
+                                        <div class="alert alert-success alert-dismissible" role="alert">
+                                            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                            <?php echo Yii::$app->session->getFlash('success'); ?>
+                                        </div>
+                                    <?php endif;?>
 
-                                <?php if( Yii::$app->session->hasFlash('error') ): ?>
-                                    <div class="alert alert-danger alert-dismissible" role="alert">
-                                        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                        <?php echo Yii::$app->session->getFlash('error'); ?>
-                                    </div>
-                                <?php endif;?>
+                                    <?php if( Yii::$app->session->hasFlash('error') ): ?>
+                                        <div class="alert alert-danger alert-dismissible" role="alert">
+                                            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                            <?php echo Yii::$app->session->getFlash('error'); ?>
+                                        </div>
+                                    <?php endif;?>
 
-                                <?php $form = ActiveForm::begin(['id' => 'contact-form']); ?>
+                                    <?php $form = ActiveForm::begin(['id' => 'contact-form']); ?>
 
-                                <?= $form->field($model, 'name') ?>    <!--)->textInput(['autofocus' => true] автофокус на поле имя-->
+                                    <?= $form->field($model, 'name') ?>    <!--)->textInput(['autofocus' => true] автофокус на поле имя-->
 
-                                <?= $form->field($model, 'email') ?>
+                                    <?= $form->field($model, 'email') ?>
 
-                                <?= $form->field($model, 'subject') ?>
+                                    <?= $form->field($model, 'subject') ?>
 
-                                <?= $form->field($model, 'text')->textarea(['rows' => 6]) ?>
+                                    <?= $form->field($model, 'text')->textarea(['rows' => 6]) ?>
 
 
-                                <?= Html::submitButton('Отправить', ['class' => 'btn btn-success'])?>
+                                    <?= Html::submitButton('Отправить', ['class' => 'btn btn-success'])?>
 
-                                <?php ActiveForm::end(); ?>
+                                    <?php ActiveForm::end(); ?>
 
+                                </div>
                             </div>
-                        </div>
+                      </div>
                     </div>
-                </div>
 
                 <div class="window_wrap">
                     <div class="window">
@@ -424,12 +424,12 @@ AppAsset::register($this);
                     <div class="telButton_hover">Заказать звонок</div>
                 </div>
 
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
 
-    <!--/ contact-->
+        <!--/ contact-->
     <!--footer-->
     <footer id="footer">
         <div class="top-footer">
@@ -478,13 +478,13 @@ AppAsset::register($this);
                         © Copyright Medilab Theme. All Rights Reserved
                         <div class="credits">
                             <!-- Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>  -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!--/ footer-->
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         </div>
+     </footer>
+     <!--/ footer-->
 
 
 
@@ -494,9 +494,3 @@ AppAsset::register($this);
     </html>
 
 <?php $this->endPage() ?>
-
-
-
-
-
-
