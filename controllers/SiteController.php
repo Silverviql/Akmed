@@ -72,7 +72,7 @@ class SiteController extends Controller
                 Yii::$app->session->setFlash('error', 'Ошибка');
             }
         }
-        $this->view->title = 'Все статьи';
+       // $this->view->title = 'Все статьи';
         return $this->render('index', compact('model'));
     }
 
