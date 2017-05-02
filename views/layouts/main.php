@@ -57,6 +57,15 @@ AppAsset::register($this);
     ?>
 
     <div class="container">
+        <?= Breadcrumbs::widget([
+            'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
+        ]) ?>
+        <?= $content ?>
+    </div>
+</div>
+
+
+    <div class="container">
         <div class="col-md-12">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -77,8 +86,7 @@ AppAsset::register($this);
             </div>
         </div>
     </div>
-</div>
-
+</nav>
 
 <footer class="footer">
     <div class="container">
