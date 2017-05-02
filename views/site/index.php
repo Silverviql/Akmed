@@ -33,7 +33,7 @@ AppAsset::register($this);
     <!--banner-->
     <section id="banner" class="banner">
         <div class="bg-color">
-        <!--    <nav class="navbar navbar-default navbar-fixed-top"> -->
+           <nav class="navbar navbar-default navbar-fixed-top">
                 <div class="container">
                     <div class="col-md-12">
                         <div class="navbar-header">
