@@ -391,7 +391,7 @@ AppAsset::register($this);
 
                                     <?php $form = ActiveForm::begin(['id' => 'contact-form']); ?>
 
-                                    <?= $form->field($model, 'name') ?>
+                                    <?= $form->field($model, 'name') ?>    <!--)->textInput(['autofocus' => true] автофокус на поле имя-->
 
                                     <?= $form->field($model, 'email') ?>
 
