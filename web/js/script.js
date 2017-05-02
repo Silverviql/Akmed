@@ -87,7 +87,7 @@ $(document).ready(function(){
 		);
 	
  	
- 	$('.telButton.anim').css({'position':'absolute','top':'-100px','right':'50px','transition': "top 0.9s cubic-bezier(.65, 1.95, .03, .32) 0.5s"});	
+ 	$('.telButton.anim').css({'position':'absolute','top':'-100px','right':'50px','transition': "top 100 cubic-bezier(.65, 1.95, .03, .32) 0.5s"});
 	
 	
 	telButtonReturn();
