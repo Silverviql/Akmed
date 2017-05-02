@@ -1,5 +1,6 @@
 $(document).ready(function(){
 
+
     var p = $('.window_wrap');
     $('.telButton').click(function() {
 
@@ -64,14 +65,6 @@ $(document).ready(function(){
         });
 
     });
-
-
-
-
-
-
-
-
 
 
 
