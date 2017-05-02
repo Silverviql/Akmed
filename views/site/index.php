@@ -435,26 +435,25 @@ AppAsset::register($this);
                                  </div>
                              </form>
                         </div>-->
-                    <div class="window_wrap">
-                        <div class="window">
-
-                            <div class="window_close">X</div>
-                            <p>Оставьте ваш телефон<br/>и наш консультант свяжется с вами</p>
-
-                            <form id="backPhone" name="backPhone">
-                                <input name="telephone" type="Tel" id="telForm" maxlength="20" placeholder="Введите ваш телефон"/>
-                                <button id="telButton" type="submit" form="backPhone">Заказать звонок</button>
-                            </form>
-
-                        </div>
-
-                    </div>
 
                     </div>
                 </div>
             </div>
 
+        <div class="window_wrap">
+            <div class="window">
 
+                <div class="window_close">X</div>
+                <p>Оставьте ваш телефон<br/>и наш консультант свяжется с вами</p>
+
+                <form id="backPhone" name="backPhone">
+                    <input name="telephone" type="Tel" id="telForm" maxlength="20" placeholder="Введите ваш телефон"/>
+                    <button id="telButton" type="submit" form="backPhone">Заказать звонок</button>
+                </form>
+
+            </div>
+
+        </div>
 
         <div class="telButton anim">
             <div class="telButton_border"></div>
