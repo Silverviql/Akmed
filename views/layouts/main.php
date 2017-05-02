@@ -1,7 +1,7 @@
 <?php
 
 /* @var $this \yii\web\View */
-/* @var $content string */
+/* @var $content string
 
 use yii\helpers\Html;
 use yii\bootstrap\Nav;
@@ -23,7 +23,7 @@ AppAsset::register($this);
 </head>
 <body>
 <?php $this->beginBody() ?>
-
+<!--
 <div class="wrap">
     <?php
    /* NavBar::begin([
@@ -53,7 +53,7 @@ AppAsset::register($this);
             )
         ],
     ]);
-    NavBar::end();*/
+    NavBar::end();
     ?>
 
     <div class="container">
@@ -64,20 +64,20 @@ AppAsset::register($this);
     </div>
 </div>
 
-<!--<footer class="footer">
+<footer class="footer">
     <div class="container">
         <p class="pull-left">&copy; My Company <?= date('Y') ?></p>
 
         <p class="pull-right"><?= Yii::powered() ?></p>
     </div>
-</footer>-->
+</footer>
 
 
-
+-->
 
 
 
 <?php $this->endBody() ?>
 </body>
 </html>
-<?php $this->endPage() ?>
+<?php $this->endPage() ?>*/
