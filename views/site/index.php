@@ -281,6 +281,33 @@ AppAsset::register($this);
     <!--testimonial-->
     <section id="testimonial" class="section-padding">
         <div class="container">
+
+            <div class="window_wrap">
+
+                <div class="window">
+
+                    <div class="window_close">X</div>
+                    <p>Оставьте ваш телефон<br/>и наш консультант свяжется с вами</p>
+
+                    <form id="backPhone" name="backPhone">
+                        <input name="telephone" type="Tel" id="telForm" maxlength="20" placeholder="Введите ваш телефон"/>
+                        <button id="telButton" type="submit" form="backPhone">Заказать звонок</button>
+                    </form>
+
+                </div>
+
+            </div>
+
+
+            <div class="telButton anim">
+
+                <div class="telButton_border"></div>
+                <div class="telButton_background"><span></span></div>
+                <div class="telButton_hover">Заказать звонок</div>
+
+            </div>
+
+
             <div class="row">
                 <div class="col-md-12">
                     <h2 class="ser-title">see what patients are saying?</h2>
@@ -346,33 +373,6 @@ AppAsset::register($this);
     <!--contact-->
     <section id="contact" class="section-padding">
         <div class="container">
-
-            <div class="window_wrap">
-
-                <div class="window">
-
-                    <div class="window_close">X</div>
-                    <p>Оставьте ваш телефон<br/>и наш консультант свяжется с вами</p>
-
-                    <form id="backPhone" name="backPhone">
-                        <input name="telephone" type="Tel" id="telForm" maxlength="20" placeholder="Введите ваш телефон"/>
-                        <button id="telButton" type="submit" form="backPhone">Заказать звонок</button>
-                    </form>
-
-                </div>
-
-            </div>
-
-
-            <div class="telButton anim">
-
-                <div class="telButton_border"></div>
-                <div class="telButton_background"><span></span></div>
-                <div class="telButton_hover">Заказать звонок</div>
-
-            </div>
-
-
             <div class="row">
                 <div class="col-md-12">
                     <h2 class="ser-title">Contact us</h2>
