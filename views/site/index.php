@@ -407,7 +407,6 @@ AppAsset::register($this);
                                 </div>
                             </div>
 
-                        <?php endif; ?>
                     </div>
 
 
