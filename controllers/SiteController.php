@@ -71,6 +71,20 @@ class SiteController extends Controller
             echo "Нет подключения к БД";
 
         Yii::$app->db->createCommand('SELECT 1')->execute();
+
+
+        $model = new ContactForm();
+
+        if ( $model->load(Yii::$app->request->post()) ) {
+            if ($model->save()) {
+                Yii::$app->session->setFlash('success', 'Данные приняты');
+                return $this->refresh();
+            } else {
+                Yii::$app->session->setFlash('error', 'Ошибка');
+            }
+        }
+        $this->view->title = 'Все статьи';
+        return $this->render('contact', compact('model'));
     }
 
 
