@@ -267,7 +267,7 @@
         },
 
         isWindow: function( obj ) {
-			/* jshint eqeqeq: false */
+            /* jshint eqeqeq: false */
             return obj != null && obj == obj.window;
         },
 
@@ -548,11 +548,11 @@
 // Defining this global in .jshintrc would create a danger of using the global
 // unguarded in another place, it seems safer to just disable JSHint for these
 // three lines.
-	/* jshint ignore: start */
+    /* jshint ignore: start */
     if ( typeof Symbol === "function" ) {
         jQuery.fn[ Symbol.iterator ] = deletedIds[ Symbol.iterator ];
     }
-	/* jshint ignore: end */
+    /* jshint ignore: end */
 
 // Populate the class2type map
     jQuery.each( "Boolean Number String Function Array Date RegExp Object Error Symbol".split( " " ),
@@ -577,16 +577,16 @@
             typeof length === "number" && length > 0 && ( length - 1 ) in obj;
     }
     var Sizzle =
-		/*!
-		 * Sizzle CSS Selector Engine v2.2.1
-		 * http://sizzlejs.com/
-		 *
-		 * Copyright jQuery Foundation and other contributors
-		 * Released under the MIT license
-		 * http://jquery.org/license
-		 *
-		 * Date: 2015-10-17
-		 */
+        /*!
+         * Sizzle CSS Selector Engine v2.2.1
+         * http://sizzlejs.com/
+         *
+         * Copyright jQuery Foundation and other contributors
+         * Released under the MIT license
+         * http://jquery.org/license
+         *
+         * Date: 2015-10-17
+         */
         (function( window ) {
 
             var i,
@@ -1096,8 +1096,8 @@
                     }
                 }
 
-				/* Attributes
-				 ---------------------------------------------------------------------- */
+                /* Attributes
+                 ---------------------------------------------------------------------- */
 
                 // Support: IE<8
                 // Verify that getAttribute really returns attributes and not properties
@@ -1107,8 +1107,8 @@
                     return !div.getAttribute("className");
                 });
 
-				/* getElement(s)By*
-				 ---------------------------------------------------------------------- */
+                /* getElement(s)By*
+                 ---------------------------------------------------------------------- */
 
                 // Check if getElementsByTagName("*") returns only elements
                 support.getElementsByTagName = assert(function( div ) {
@@ -1196,8 +1196,8 @@
                         }
                     };
 
-				/* QSA/matchesSelector
-				 ---------------------------------------------------------------------- */
+                /* QSA/matchesSelector
+                 ---------------------------------------------------------------------- */
 
                 // QSA and matchesSelector support
 
@@ -1304,8 +1304,8 @@
                 rbuggyQSA = rbuggyQSA.length && new RegExp( rbuggyQSA.join("|") );
                 rbuggyMatches = rbuggyMatches.length && new RegExp( rbuggyMatches.join("|") );
 
-				/* Contains
-				 ---------------------------------------------------------------------- */
+                /* Contains
+                 ---------------------------------------------------------------------- */
                 hasCompare = rnative.test( docElem.compareDocumentPosition );
 
                 // Element contains another
@@ -1332,8 +1332,8 @@
                         return false;
                     };
 
-				/* Sorting
-				 ---------------------------------------------------------------------- */
+                /* Sorting
+                 ---------------------------------------------------------------------- */
 
                 // Document order sorting
                 sortOrder = hasCompare ?
@@ -1605,16 +1605,16 @@
                     },
 
                     "CHILD": function( match ) {
-						/* matches from matchExpr["CHILD"]
-						 1 type (only|nth|...)
-						 2 what (child|of-type)
-						 3 argument (even|odd|\d*|\d*n([+-]\d+)?|...)
-						 4 xn-component of xn+y argument ([+-]?\d*n|)
-						 5 sign of xn-component
-						 6 x of xn-component
-						 7 sign of y-component
-						 8 y of y-component
-						 */
+                        /* matches from matchExpr["CHILD"]
+                         1 type (only|nth|...)
+                         2 what (child|of-type)
+                         3 argument (even|odd|\d*|\d*n([+-]\d+)?|...)
+                         4 xn-component of xn+y argument ([+-]?\d*n|)
+                         5 sign of xn-component
+                         6 x of xn-component
+                         7 sign of y-component
+                         8 y of y-component
+                         */
                         match[1] = match[1].toLowerCase();
 
                         if ( match[1].slice( 0, 3 ) === "nth" ) {
@@ -2765,7 +2765,7 @@
     function winnow( elements, qualifier, not ) {
         if ( jQuery.isFunction( qualifier ) ) {
             return jQuery.grep( elements, function( elem, i ) {
-				/* jshint -W018 */
+                /* jshint -W018 */
                 return !!qualifier.call( elem, i, elem ) !== not;
             } );
 
@@ -3164,28 +3164,28 @@
         return object;
     }
 
-	/*
-	 * Create a callback list using the following parameters:
-	 *
-	 *	options: an optional list of space-separated options that will change how
-	 *			the callback list behaves or a more traditional option object
-	 *
-	 * By default a callback list will act like an event callback list and can be
-	 * "fired" multiple times.
-	 *
-	 * Possible options:
-	 *
-	 *	once:			will ensure the callback list can only be fired once (like a Deferred)
-	 *
-	 *	memory:			will keep track of previous values and will call any callback added
-	 *					after the list has been fired right away with the latest "memorized"
-	 *					values (like a Deferred)
-	 *
-	 *	unique:			will ensure a callback can only be added once (no duplicate in the list)
-	 *
-	 *	stopOnFalse:	interrupt callings when a callback returns false
-	 *
-	 */
+    /*
+     * Create a callback list using the following parameters:
+     *
+     *	options: an optional list of space-separated options that will change how
+     *			the callback list behaves or a more traditional option object
+     *
+     * By default a callback list will act like an event callback list and can be
+     * "fired" multiple times.
+     *
+     * Possible options:
+     *
+     *	once:			will ensure the callback list can only be fired once (like a Deferred)
+     *
+     *	memory:			will keep track of previous values and will call any callback added
+     *					after the list has been fired right away with the latest "memorized"
+     *					values (like a Deferred)
+     *
+     *	unique:			will ensure a callback can only be added once (no duplicate in the list)
+     *
+     *	stopOnFalse:	interrupt callings when a callback returns false
+     *
+     */
     jQuery.Callbacks = function( options ) {
 
         // Convert options from String-formatted to Object-formatted if needed
@@ -3999,9 +3999,9 @@
             jQuery.cleanData( [ elem ], true );
 
             // Use delete when supported for expandos or `cache` is not a window per isWindow (#10080)
-			/* jshint eqeqeq: false */
+            /* jshint eqeqeq: false */
         } else if ( support.deleteExpando || cache != cache.window ) {
-			/* jshint eqeqeq: true */
+            /* jshint eqeqeq: true */
             delete cache[ id ];
 
             // When all else fails, undefined
@@ -4834,10 +4834,10 @@
         } );
     }
 
-	/*
-	 * Helper functions for managing events -- not part of the public interface.
-	 * Props to Dean Edwards' addEvent library for many of the ideas.
-	 */
+    /*
+     * Helper functions for managing events -- not part of the public interface.
+     * Props to Dean Edwards' addEvent library for many of the ideas.
+     */
     jQuery.event = {
 
         global: {},
@@ -5259,9 +5259,9 @@
             if ( delegateCount && cur.nodeType &&
                 ( event.type !== "click" || isNaN( event.button ) || event.button < 1 ) ) {
 
-				/* jshint eqeqeq: false */
+                /* jshint eqeqeq: false */
                 for ( ; cur != this; cur = cur.parentNode || this ) {
-					/* jshint eqeqeq: true */
+                    /* jshint eqeqeq: true */
 
                     // Don't check non-elements (#13208)
                     // Don't process clicks on disabled elements (#6911, #8165, #11382, #11764)
@@ -7548,7 +7548,7 @@
     }
 
     function defaultPrefilter( elem, props, opts ) {
-		/* jshint validthis: true */
+        /* jshint validthis: true */
         var prop, value, toggle, tween, hooks, oldfire, display, checkDisplay,
             anim = this,
             orig = {},
@@ -9078,22 +9078,22 @@
         rprotocol = /^\/\//,
         rurl = /^([\w.+-]+:)(?:\/\/(?:[^\/?#]*@|)([^\/?#:]*)(?::(\d+)|)|)/,
 
-		/* Prefilters
-		 * 1) They are useful to introduce custom dataTypes (see ajax/jsonp.js for an example)
-		 * 2) These are called:
-		 *    - BEFORE asking for a transport
-		 *    - AFTER param serialization (s.data is a string if s.processData is true)
-		 * 3) key is the dataType
-		 * 4) the catchall symbol "*" can be used
-		 * 5) execution will start with transport dataType and THEN continue down to "*" if needed
-		 */
+        /* Prefilters
+         * 1) They are useful to introduce custom dataTypes (see ajax/jsonp.js for an example)
+         * 2) These are called:
+         *    - BEFORE asking for a transport
+         *    - AFTER param serialization (s.data is a string if s.processData is true)
+         * 3) key is the dataType
+         * 4) the catchall symbol "*" can be used
+         * 5) execution will start with transport dataType and THEN continue down to "*" if needed
+         */
         prefilters = {},
 
-		/* Transports bindings
-		 * 1) key is the dataType
-		 * 2) the catchall symbol "*" can be used
-		 * 3) selection will start with transport dataType and THEN go to "*" if needed
-		 */
+        /* Transports bindings
+         * 1) key is the dataType
+         * 2) the catchall symbol "*" can be used
+         * 3) selection will start with transport dataType and THEN go to "*" if needed
+         */
         transports = {},
 
         // Avoid comment-prolog char sequence (#10098); must appease lint and evade compression
@@ -9185,10 +9185,10 @@
         return target;
     }
 
-	/* Handles responses to an ajax request:
-	 * - finds the right dataType (mediates between content-type and expected dataType)
-	 * - returns the corresponding response
-	 */
+    /* Handles responses to an ajax request:
+     * - finds the right dataType (mediates between content-type and expected dataType)
+     * - returns the corresponding response
+     */
     function ajaxHandleResponses( s, jqXHR, responses ) {
         var firstDataType, ct, finalDataType, type,
             contents = s.contents,
@@ -9243,9 +9243,9 @@
         }
     }
 
-	/* Chain conversions given the request and the original response
-	 * Also sets the responseXXX fields on the jqXHR instance
-	 */
+    /* Chain conversions given the request and the original response
+     * Also sets the responseXXX fields on the jqXHR instance
+     */
     function ajaxConvert( s, response, jqXHR, isSuccess ) {
         var conv2, current, conv, tmp, prev,
             converters = {},
@@ -9359,17 +9359,17 @@
             processData: true,
             async: true,
             contentType: "application/x-www-form-urlencoded; charset=UTF-8",
-			/*
-			 timeout: 0,
-			 data: null,
-			 dataType: null,
-			 username: null,
-			 password: null,
-			 cache: null,
-			 throws: false,
-			 traditional: false,
-			 headers: {},
-			 */
+            /*
+             timeout: 0,
+             data: null,
+             dataType: null,
+             username: null,
+             password: null,
+             cache: null,
+             throws: false,
+             traditional: false,
+             headers: {},
+             */
 
             accepts: {
                 "*": allTypes,

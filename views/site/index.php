@@ -441,6 +441,7 @@ AppAsset::register($this);
             </div>
 
         <div class="window_wrap">
+
             <div class="window">
 
                 <div class="window_close">X</div>
@@ -455,7 +456,9 @@ AppAsset::register($this);
 
         </div>
 
+
         <div class="telButton anim">
+
             <div class="telButton_border"></div>
             <div class="telButton_background"><span></span></div>
             <div class="telButton_hover">Заказать звонок</div>
