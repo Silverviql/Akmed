@@ -52,8 +52,8 @@ AppAsset::register($this);
                 . '</li>'
             )
         ],
-    ]);
-    NavBar::end();*/
+    ]);*/
+    NavBar::end();
     ?>
 
     <div class="container">
