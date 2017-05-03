@@ -6,6 +6,9 @@ $config = [
     'bootstrap' => ['log'],
     'defaultRoute' => 'site/index',
   //  'layout' => 'basic',
+    'sourceLanguage' => 'en', //добавление многоязычночти
+    'language' => 'en',
+
     'components' => [
         'request' => [
             // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
@@ -47,6 +50,15 @@ $config = [
                 '<controller:\w+/?>' => '<controller>/index',
                 '<controller:\w+>/<id:\d+>' => '<controller>/view',
                 '<controller:\w+>/<action:\w+>/<id:\d+>' => '<controller>/<action>',
+            ],
+        ],
+     /* эта секция предназначена для конфигурирования конмпонента интеранционализации.*/
+        'i18n' => [
+            'translations' => [
+                'common*' => [
+                    'class' => 'yii\i18n\PhpMessageSource',
+                    'basePath' => '@app/messages',
+                ],
             ],
         ],
     ],
