@@ -4,7 +4,7 @@
  * This file is part of the Gherkin.
  * (c) Konstantin Kudryashov <ever.zet@gmail.com>
  *
- * For the full copyright and license information, please view the LICENSE
+ * For the full copyright and license information, please views the LICENSE
  * file that was distributed with this source code.
  */
 

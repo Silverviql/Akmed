@@ -14,6 +14,7 @@ $config = [
             // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
             'cookieValidationKey' => 'kaipupzemli',
             'baseUrl' => '',
+            'class' => 'app\components\LangRequest'
         ],
         'cache' => [
             'class' => 'yii\caching\FileCache',
@@ -45,22 +46,33 @@ $config = [
         'urlManager' => [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
+            'class'=>'app\components\LangUrlManager',
             'rules' => [
                 '/' => 'site/index',
                 '<controller:\w+/?>' => '<controller>/index',
-                '<controller:\w+>/<id:\d+>' => '<controller>/view',
+                '<controller:\w+>/<id:\d+>' => '<controller>/views',
                 '<controller:\w+>/<action:\w+>/<id:\d+>' => '<controller>/<action>',
+                '<controller:\w+>/<action:\w+>/*'=>'<controller>/<action>',
             ],
         ],
+
+
+
      /* эта секция предназначена для конфигурирования конмпонента интеранционализации.*/
+        'language'=>'ru-RU',
         'i18n' => [
             'translations' => [
-                'common*' => [
+                '*' => [
                     'class' => 'yii\i18n\PhpMessageSource',
-                    'basePath' => '@app/messages',
+                    'basePath' => '@webroot/lang',
+                    'sourceLanguage' => 'en',
+                    'fileMap' => [
+                        'main' => 'main.php',
+                    ],
                 ],
             ],
         ],
+
     ],
     'params' => $params,
 ];
