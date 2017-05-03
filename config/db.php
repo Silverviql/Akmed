@@ -8,8 +8,8 @@ return [
     'charset' => 'utf8',
 ];
 
-
-/*return [
+/*
+return [
     'class' => 'yii\db\Connection',
     'dsn' => 'mysql:host=localhost;dbname=akmed',
     'username' => 'root',
