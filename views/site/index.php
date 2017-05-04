@@ -9,6 +9,7 @@ use yii\bootstrap\NavBar;
 use yii\widgets\Breadcrumbs;
 use app\assets\AppAsset;;
 use yii\bootstrap\ActiveForm;
+use cybercog\yii\googleanalytics\widgets\GATracking;
 
 
 AppAsset::register($this);
@@ -24,6 +25,11 @@ AppAsset::register($this);
         <?= Html::csrfMetaTags() ?>
         <title><?= Html::encode($this->title) ?></title>
         <?php $this->head() ?>
+
+        <!-- гугл аналитик-->
+        <?= GATracking::widget([
+            'trackingId' => '(UA-98500405-1',
+        ]) ?>
 
     </head>
     <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
