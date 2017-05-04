@@ -657,7 +657,7 @@ Button
     background: #fff;
     vertical-align: middle;
     background: #38833e none repeat scroll 0 0;
-    height: 136px;
+    min-height: 136px;
 }
 
 .window_close {
@@ -688,9 +688,9 @@ Button
 .window p {
     color: #fff;
     font-family: "Arial",sans-serif;
-    font-size: 16px;
+    font-size: 15px;
     font-weight: bold;
-    line-height: 24px;
+    line-height: 20px;
     text-align: center;
     text-transform: uppercase;
 }
@@ -698,24 +698,28 @@ Button
 #telForm {
     background: #fafafa none repeat scroll 0 0;
     border: medium none;
-    border-radius: 5px 0 0 5px;
-    float: left;
+    border-radius: 5px;
     height: 35px;
     text-align: center;
-    width: 58%;
+    width: 100%;
     font-size: 14px;
 }
 #telButton {
     background: #e03f58 none repeat scroll 0 0;
     border: medium none;
-    border-radius: 0 5px 5px 0;
+    border-radius: 5px;
     color: #fff;
     cursor: pointer;
-    float: right;
     height: 37px;
     transition: all 0.6s ease 0s;
-    width: 40%;
+    width: 100%;
     font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    #telButton {
+        margin-top: 20px;
+    }
 }
 
 
