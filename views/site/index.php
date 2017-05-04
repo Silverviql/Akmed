@@ -9,7 +9,8 @@ use yii\bootstrap\NavBar;
 use yii\widgets\Breadcrumbs;
 use app\assets\AppAsset;;
 use yii\bootstrap\ActiveForm;
-use cybercog\yii\googleanalytics\widgets\GATracking;
+use yii\widgets\GATracking;
+
 
 
 AppAsset::register($this);
