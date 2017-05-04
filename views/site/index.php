@@ -63,9 +63,9 @@ AppAsset::register($this);
                             <img src="img/logo.png" class="img-responsive">
                         </div>
                         <div class="banner-text text-center">
-                            <h1 class="white">Healthcare at your desk!!</h1>
+                            <h1 class="white"><?= Yii::t('main', 'Healthcare at your desk!!')?></h1>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod <br>tempor incididunt ut labore et dolore magna aliqua.</p>
-                            <a href="#contact" class="btn btn-appoint">Make an Appointment.</a>
+                            <a href="#contact" class="btn btn-appoint"><?= Yii::t('main', 'Make an Appointment.')?></a>
                         </div>
                         <div class="overlay-detail text-center">
                             <a href="#service"><i class="fa fa-angle-down"></i></a>
@@ -82,7 +82,7 @@ AppAsset::register($this);
         <div class="container">
             <div class="row">
                 <div class="col-md-4 col-sm-4">
-                    <h2 class="ser-title">Our Service</h2>
+                    <h2 class="ser-title"><?= Yii::t('main', 'Our Service')?></h2>
                     <hr class="botm-line">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris cillum.</p>
                 </div>
@@ -92,7 +92,7 @@ AppAsset::register($this);
                             <i class="fa fa-stethoscope"></i>
                         </div>
                         <div class="icon-info">
-                            <h4>24 Hour Support</h4>
+                            <h4><?= Yii::t('main', '24 Hour Support')?></h4>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                         </div>
                     </div>
@@ -101,7 +101,7 @@ AppAsset::register($this);
                             <i class="fa fa-ambulance"></i>
                         </div>
                         <div class="icon-info">
-                            <h4>Emergency Services</h4>
+                            <h4><?= Yii::t('main', 'Emergency Services')?></h4>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                         </div>
                     </div>
@@ -112,7 +112,7 @@ AppAsset::register($this);
                             <i class="fa fa-user-md"></i>
                         </div>
                         <div class="icon-info">
-                            <h4>Medical Counseling</h4>
+                            <h4><?= Yii::t('main', 'Medical Counseling')?></h4>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                         </div>
                     </div>
@@ -121,7 +121,7 @@ AppAsset::register($this);
                             <i class="fa fa-medkit"></i>
                         </div>
                         <div class="icon-info">
-                            <h4>Premium Healthcare</h4>
+                            <h4><?= Yii::t('main', 'Premium Healthcare')?></h4>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                         </div>
                     </div>
@@ -138,14 +138,14 @@ AppAsset::register($this);
                     <div class="col-md-4 col-sm-4 bor-left">
                         <div class="mt-boxy-color"></div>
                         <div class="medi-info">
-                            <h3>Emergency Case</h3>
+                            <h3><?= Yii::t('main', 'Emergency Case')?></h3>
                             <p>I am text block. Edit this text from Appearance / Customize / Homepage header columns. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
                             <a href="#" class="medi-info-btn">READ MORE</a>
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-4">
                         <div class="medi-info">
-                            <h3>Emergency Case</h3>
+                            <h3><?= Yii::t('main', 'Emergency Case')?></h3>
                             <p>I am text block. Edit this text from Appearance / Customize / Homepage header columns. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
                             <a href="#" class="medi-info-btn">READ MORE</a>
                         </div>
@@ -153,7 +153,7 @@ AppAsset::register($this);
                     <div class="col-md-4 col-sm-4 mt-boxy-3">
                         <div class="mt-boxy-color"></div>
                         <div class="time-info">
-                            <h3>Opening Hours</h3>
+                            <h3><?= Yii::t('main', 'Opening Hours')?></h3>
                             <table style="margin: 8px 0px 0px;" border="1">
                                 <tbody>
                                 <tr>
@@ -183,10 +183,10 @@ AppAsset::register($this);
             <div class="row">
                 <div class="col-md-3 col-sm-4 col-xs-12">
                     <div class="section-title">
-                        <h2 class="head-title lg-line">The Medilap <br>Ultimate Dream</h2>
+                        <h2 class="head-title lg-line"><?= Yii::t('main', 'The Medilap')?> <br><?= Yii::t('main', 'Ultimate Dream')?></h2>
                         <hr class="botm-line">
                         <p class="sec-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua..</p>
-                        <a href="" style="color: #0cb8b6; padding-top:10px;">Know more..</a>
+                        <a href="" style="color: #0cb8b6; padding-top:10px;"><?= Yii::t('main', 'Know more..')?></a>
                     </div>
                 </div>
                 <div class="col-md-9 col-sm-8 col-xs-12">
@@ -194,7 +194,7 @@ AppAsset::register($this);
                         <div class="more-features-box-text">
                             <div class="more-features-box-text-icon"> <i class="fa fa-angle-right" aria-hidden="true"></i> </div>
                             <div class="more-features-box-text-description">
-                                <h3>It's something important you want to know.</h3>
+                                <h3><?= Yii::t('main', 'It\'s something important you want to know.')?></h3>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et. Ut wisi enim ad minim veniam, quis nostrud.</p>
                             </div>
                         </div>
@@ -216,15 +216,15 @@ AppAsset::register($this);
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <h2 class="ser-title">Meet Our Doctors!</h2>
+                    <h2 class="ser-title"><?= Yii::t('main', 'Meet Our Doctors!')?></h2>
                     <hr class="botm-line">
                 </div>
                 <div class="col-md-3 col-sm-3 col-xs-6">
                     <div class="thumbnail">
                         <img src="img/doctor1.jpg" alt="..." class="team-img">
                         <div class="caption">
-                            <h3>Jessica Wally</h3>
-                            <p>Doctor</p>
+                            <h3><?= Yii::t('main', 'Jessica Wally')?></h3>
+                            <p><?= Yii::t('main', 'Doctor')?></p>
                             <ul class="list-inline">
                                 <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                                 <li><a href="#"><i class="fa fa-twitter"></i></a></li>
@@ -284,7 +284,7 @@ AppAsset::register($this);
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <h2 class="ser-title">see what patients are saying?</h2>
+                    <h2 class="ser-title"><?= Yii::t('main', 'see what patients are saying?')?></h2>
                     <hr class="botm-line">
                 </div>
                 <div class="col-md-4 col-sm-4">
@@ -296,7 +296,7 @@ AppAsset::register($this);
                         <!-- User Image -->
                         <a href="#"><img src="img/thumb.png" alt="" class="img-responsive"></a>
                         <!-- User Name -->
-                        <h3>Alex<span>Texas</span></h3>
+                        <h3><?= Yii::t('main', 'Alex')?><span><?= Yii::t('main', 'Texas')?></span></h3>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-4">
@@ -333,7 +333,7 @@ AppAsset::register($this);
             <div class=" row">
                 <div class="col-md-2"></div>
                 <div class="text-right-md col-md-4 col-sm-4">
-                    <h2 class="section-title white lg-line">« A few words<br> about us »</h2>
+                    <h2 class="section-title white lg-line"><?= Yii::t('main', '« A few words')?><br><?= Yii::t('main', 'about us »')?> </h2>
                 </div>
                 <div class="col-md-4 col-sm-5">
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a typek
@@ -349,16 +349,16 @@ AppAsset::register($this);
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <h2 class="ser-title">Contact us</h2>
+                    <h2 class="ser-title"><?= Yii::t('main', 'Contact us')?></h2>
                     <hr class="botm-line">
                 </div>
                 <div class="col-md-4 col-sm-4">
                     <h3>    <?= Yii::t('main', 'Contact Info')?></h3>
                     <div class="space"></div>
-                    <p><i class="fa fa-map-marker fa-fw pull-left fa-2x"></i>321 Awesome Street<br>
-                        New York, NY 17022</p>
+                    <p><i class="fa fa-map-marker fa-fw pull-left fa-2x"></i><?= Yii::t('main', '321 Awesome Street')?><br>
+                        <?= Yii::t('main', 'New York, NY 17022')?></p>
                     <div class="space"></div>
-                    <p><i class="fa fa-envelope-o fa-fw pull-left fa-2x"></i>info@companyname.com</p>
+                    <p><i class="fa fa-envelope-o fa-fw pull-left fa-2x"></i><?= Yii::t('main', 'info@companyname.com')?></p>
                     <div class="space"></div>
                     <p><i class="fa fa-phone fa-fw pull-left fa-2x"></i>+1 800 123 1234</p>
                 </div>
@@ -367,8 +367,8 @@ AppAsset::register($this);
                     <div class="site-contact">
 
                             <p>
-                                If you have business inquiries or other questions, please fill out the following form to contact us.
-                                Thank you.
+                                <?= Yii::t('main', 'If you have business inquiries or other questions, please fill out the following form to contact us.
+                                Thank you.')?>
                             </p>
 
                             <div class="row">
@@ -452,7 +452,7 @@ AppAsset::register($this);
                 <div class="row">
                     <div class="col-md-4 col-sm-4 marb20">
                         <div class="ftr-tle">
-                            <h4 class="white no-padding">About Us</h4>
+                            <h4 class="white no-padding"><?= Yii::t('main', 'About Us')?></h4>
                         </div>
                         <div class="info-sec">
                             <p>Praesent convallis tortor et enim laoreet, vel consectetur purus latoque penatibus et dis parturient.</p>
@@ -460,19 +460,19 @@ AppAsset::register($this);
                     </div>
                     <div class="col-md-4 col-sm-4 marb20">
                         <div class="ftr-tle">
-                            <h4 class="white no-padding">Quick Links</h4>
+                            <h4 class="white no-padding"><?= Yii::t('main', 'Quick Links')?></h4>
                         </div>
                         <div class="info-sec">
                             <ul class="quick-info">
-                                <li><a href="index.html"><i class="fa fa-circle"></i>Home</a></li>
-                                <li><a href="#service"><i class="fa fa-circle"></i>Service</a></li>
-                                <li><a href="#contact"><i class="fa fa-circle"></i>Appointment</a></li>
+                                <li><a href="index.html"><i class="fa fa-circle"></i><?= Yii::t('main', 'Home')?></a></li>
+                                <li><a href="#service"><i class="fa fa-circle"></i><?= Yii::t('main', 'Service')?></a></li>
+                                <li><a href="#contact"><i class="fa fa-circle"></i><?= Yii::t('main', 'Appointment')?></a></li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-4 marb20">
                         <div class="ftr-tle">
-                            <h4 class="white no-padding">Follow us</h4>
+                            <h4 class="white no-padding"><?= Yii::t('main', 'Follow us')?></h4>
                         </div>
                         <div class="info-sec">
                             <ul class="social-icon">
@@ -490,7 +490,7 @@ AppAsset::register($this);
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 text-center">
-                        © Copyright Medilab Theme. All Rights Reserved
+                        <?= Yii::t('main', '© Copyright Medilab Theme. All Rights Reserved')?>
                         <div class="credits">
                             <!--
                                 All the links in the footer should remain intact.
