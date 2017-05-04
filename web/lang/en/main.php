@@ -20,7 +20,7 @@ return [
     'The Medilap' => 'THE MEDILAP',
     'Ultimate Dream' => 'ULTIMATE DREAM',
     'Know more..' => 'Know more..',
-    'It's something important you want to know.' => 'It's something important you want to know.',
+    'It\'s something important you want to know.' => 'It's something important you want to know.',
     'Meet Our Doctors!' => 'MEET OUR DOCTORS!',
     'Jessica Wally' => 'Jessica Wally',
     'see what patients are saying?' => 'SEE WHAT PATIENTS ARE SAYING?',

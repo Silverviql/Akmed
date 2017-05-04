@@ -36,7 +36,7 @@ return [
     'If you have business inquiries or other questions, please fill out the following form to contact us. Thank you.' => 'Если у вас есть деловые вопросы или другие вопросы, пожалуйста, заполните следующую форму, чтобы связаться с нами. Спасибо.',
     'About Us' => 'О нас',
     'Quick Links' => 'Быстрые ссылки',
-    'Home' => 'Глввная',
+    'Home' => 'Главная',
     'Service' => 'Сервисы',
     'Appointment' => 'Запись на прием',
     'Follow us' => 'Следуй за нами',
