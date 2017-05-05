@@ -424,7 +424,7 @@ use yii\bootstrap\ActiveForm;
 
     <div class="container">
         <div class="row">
-            <div class="col-lg-6 col-md-6 col-sm-6">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
         <div id="map" style="width: 600px; height: 400px"></div>
         <script type="text/javascript">
             ymaps.ready(init);
