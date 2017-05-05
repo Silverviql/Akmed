@@ -423,6 +423,8 @@ use yii\bootstrap\ActiveForm;
         </section>
 
     <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-6">
         <div id="map" style="width: 600px; height: 400px"></div>
         <script type="text/javascript">
             ymaps.ready(init);
@@ -443,7 +445,8 @@ use yii\bootstrap\ActiveForm;
                 myMap.geoObjects.add(myPlacemark);
             }
         </script>
-
+            </div>
+        </div>
     </div>
         <!--/ contact-->
     <!--footer-->
