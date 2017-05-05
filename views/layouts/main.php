@@ -29,6 +29,9 @@ AppAsset::register($this);
             ga('create', 'UA-98500405-1', 'auto');
             ga('send', 'pageview');
         </script>
+
+        <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+
     </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 <?php $this->beginBody() ?>

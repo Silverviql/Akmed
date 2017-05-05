@@ -421,6 +421,22 @@ use yii\bootstrap\ActiveForm;
             </div>
             </div>
         </section>
+
+    <div class="container">
+        <div id="map" style="width: 600px; height: 400px"></div>
+        <script type="text/javascript">
+            ymaps.ready(init);
+            var myMap;
+
+            function init(){
+                myMap = new ymaps.Map("map", {
+                    center: [55.76, 37.64],
+                    zoom: 7
+                });
+            }
+        </script>
+
+    </div>
         <!--/ contact-->
     <!--footer-->
     <footer id="footer">
