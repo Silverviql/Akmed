@@ -35,7 +35,7 @@ $(document).ready(function(){
 				$.ajax({
 					
 					type: 'POST',
-					url: 'srv.php',
+					url: 'http://akmed8294.cloudapp.net/srv.php',
 					data: 'tel=' + tel,
 					dataType: 'json',
 					success : function (json) {
