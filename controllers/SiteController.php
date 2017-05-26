@@ -87,7 +87,7 @@ class SiteController extends Controller
             }
         }
         // $this->views->title = 'Все статьи';
-        return $this->render('index', compact('model'));
+        return $this->render('application', compact('model'));
     }
 
 
