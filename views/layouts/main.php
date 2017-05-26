@@ -62,6 +62,7 @@ AppAsset::register($this);
         <?= \app\widgets\LangWidget::widget();?>
         <!--/ banner-->
 
+
         <meta charset="<?= Yii::$app->charset ?>">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <?= Html::csrfMetaTags() ?>
@@ -80,10 +81,18 @@ AppAsset::register($this);
 
         <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 
+
+
+
     </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+
+
 <?php $this->beginBody() ?>
 <?= $content ?>
+
+
 
 <!--footer-->
 <footer id="footer">

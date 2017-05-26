@@ -108,27 +108,11 @@ use yii\bootstrap\ActiveForm;
 
 <div class="container">
     <div class="row">
-        <div class="col-lg-8  col-md-8  col-sm-8 col-xs-12 col-md-offset-2">
-            <div id="map" style=" height: 400px"></div>
-            <script type="text/javascript">
-                ymaps.ready(init);
-                var myMap,
-                    myPlacemark;
-                function init(){
-                    myMap = new ymaps.Map("map", {
-                        center: [55.79, 49.10],
-                        zoom: 7
-                    });
+        <div class="col-lg-9  col-md-8  col-sm-8 col-xs-12 col-md-offset-2">
+            <div id="map" style="height: 400px "></div>
 
-                    myPlacemark = new ymaps.Placemark([55.79, 49.10], {
-                        hintContent: 'Казань!',
-                        balloonContent: 'Столица Татарстана'
-                    });
+                <script src="customSet_controls.js" type="text/javascript"></script>
 
-
-                    myMap.geoObjects.add(myPlacemark);
-                }
-            </script>
         </div>
     </div>
 </div>

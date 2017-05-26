@@ -27,6 +27,7 @@ class AppAsset extends AssetBundle
         'js/bootstrap.min.js',
         'js/jquery.easing.min.js',
         'js/script.js',
+        'js/customSet_controls.js',
 
 
     ];
