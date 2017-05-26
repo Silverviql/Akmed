@@ -74,6 +74,21 @@ class SiteController extends Controller
         return $this->render('index', compact('model'));
     }
 
+    public function actionApplication()
+    {
+        $model = new ContactForm();
+
+        if ( $model->load(Yii::$app->request->post()) ) {
+            if ($model->save()) {
+                Yii::$app->session->setFlash('success', 'Данные приняты');
+                return $this->refresh();
+            } else {
+                Yii::$app->session->setFlash('error', 'Ошибка');
+            }
+        }
+        // $this->views->title = 'Все статьи';
+        return $this->render('Application', compact('model'));
+    }
 
 
     /**

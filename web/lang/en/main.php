@@ -30,7 +30,7 @@ return [
     '321 Awesome Street' => '321 Awesome Street',
     'New York, NY 17022' => 'New York, NY 17022',
     'info@companyname.com' => 'info@companyname.com',
-    'If you have business inquiries or other questions, please fill out the following form to contact us. Thank you.' => 'If you have business inquiries or other questions, please fill out the following form to contact us. Thank you.',
+    'Medical organization for appointment.' => 'Medical organization for appointment.',
     'About Us' => 'About Us',
     'Quick Links' => 'Quick Links',
     'Home' => 'Home',
@@ -38,4 +38,6 @@ return [
     'Appointment' => 'Appointment',
     'Follow us' => 'Follow us',
     '© Copyright Medilab Theme. All Rights Reserved' => '© Copyright Medilab Theme. All Rights Reserved',
+    'An appointment with a doctor' => 'An appointment with a doctor',
+    'Doctor\'s appointment' => 'Doctor\'s appointment',
 ];

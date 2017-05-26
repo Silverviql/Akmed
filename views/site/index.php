@@ -421,34 +421,6 @@ use yii\bootstrap\ActiveForm;
             </div>
             </div>
         </section>
-
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8  col-md-8  col-sm-8 col-xs-12 col-md-offset-2">
-                <div id="map" style=" height: 400px"></div>
-        <script type="text/javascript">
-            ymaps.ready(init);
-            var myMap,
-                myPlacemark;
-            function init(){
-                myMap = new ymaps.Map("map", {
-                    center: [55.76, 37.64],
-                    zoom: 7
-                });
-
-                myPlacemark = new ymaps.Placemark([55.76, 37.64], {
-                    hintContent: 'Москва!',
-                    balloonContent: 'Столица России'
-                });
-
-
-
-                myMap.geoObjects.add(myPlacemark);
-            }
-        </script>
-            </div>
-        </div>
-    </div>
         <!--/ contact-->
     <!--footer-->
     <footer id="footer">
