@@ -11,10 +11,7 @@ use yii\db\ActiveRecord;
  */
 class ContactForm extends ActiveRecord
 {
-    /*public $email;
-    public $subject;
-    public $body;
-    public $verifyCode;*/
+
 
 
     public static function tableName()
@@ -33,6 +30,7 @@ class ContactForm extends ActiveRecord
             'name' => 'Имя',
             'email' => 'E-mail',
             'subject' => 'Обьект',
+            'status' => 'Врачебная специализация',
             'text' => 'Текст сообщения',
 
             /*'verifyCode' => 'Verification Code',*/
@@ -46,7 +44,7 @@ class ContactForm extends ActiveRecord
     {
         return [
 
-            [['name', 'subject', 'text'], 'required'],
+            [['status', 'name', 'subject', 'text'], 'required'],
             ['email', 'email'],
         ];
     }

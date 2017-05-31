@@ -2,6 +2,8 @@
 
 use yii\helpers\Html;
 use yii\bootstrap\ActiveForm;
+use yii\helpers\ArrayHelper;
+use yii\db\ActiveRecord;
 ?>
 
 
@@ -51,9 +53,35 @@ use yii\bootstrap\ActiveForm;
 
                             <?php $form = ActiveForm::begin(['id' => 'contact-form']); ?>
 
-                            <?= $form->field($model, 'name') ?>    <!--)->textInput(['autofocus' => true] автофокус на поле имя-->
+                            <?php
+                            $authors = \app\models\ContactForm::find()->all();
+                            // формируем массив, с ключем равным полю 'id' и значением равным полю 'name'
+                            $items = ArrayHelper::map($authors,'id','status');
+                            $params = [
+                                'prompt' => 'Укажите автора записи'
+                            ];
+                            echo $form->field($model, 'status')->dropDownList($items,$params)
+                            ?>
 
-                            <?= $form->field($model, 'email') ?>
+                            <?php
+                            $authors = \app\models\ContactForm::find()->all();
+                            // формируем массив, с ключем равным полю 'id' и значением равным полю 'name'
+                            $items = ArrayHelper::map($authors,'id','status');
+                            $params = [
+                                'prompt' => 'Укажите автора записи'
+                            ];
+                            echo $form->field($model, 'status')->dropDownList($items,$params)
+                            ?>
+
+                            <?php
+                            $authors = \app\models\ContactForm::find()->all();
+                            // формируем массив, с ключем равным полю 'id' и значением равным полю 'name'
+                            $items = ArrayHelper::map($authors,'id','status');
+                            $params = [
+                                'prompt' => 'Укажите автора записи'
+                            ];
+                            echo $form->field($model, 'status')->dropDownList($items,$params)
+                            ?>
 
                             <?= $form->field($model, 'subject') ?>
 
