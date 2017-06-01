@@ -51,7 +51,7 @@ AppAsset::register($this);
                             <div class="banner-text text-center">
                                 <h1 class="white"><?= Yii::t('main', 'Healthcare at your desk!!')?></h1>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod <br>tempor incididunt ut labore et dolore magna aliqua.</p>
-                                <a href="#contact" class="btn btn-appoint"><?= Yii::t('main', 'Make an Appointment.')?></a>
+                                <a href="http://akmed8294.cloudapp.net/site/application" class="btn btn-appoint"><?= Yii::t('main', 'Make an Appointment.')?></a>
                             </div>
                             <div class="overlay-detail text-center">
                                 <a href="#service"><i class="fa fa-angle-down"></i></a>
