@@ -136,7 +136,8 @@ use yii\db\ActiveRecord;
 
 <div class="container">
     <div class="row">
-        <div class="col-lg-9  col-md-8  col-sm-8 col-xs-12 col-md-offset-2">
+      <!--  <div class="col-lg-9  col-md-8  col-sm-8 col-xs-12 col-md-offset-2">-->
+        <div class="">
             <div id="map" style="height: 400px "></div>
 
             <script src="customSet_controls.js" type="text/javascript"></script>

@@ -89,7 +89,6 @@ AppAsset::register($this);
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 
 
-
 <?php $this->beginBody() ?>
 <?= $content ?>
 
