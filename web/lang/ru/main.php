@@ -8,9 +8,9 @@ return [
     'Contact' => 'Контакты',
     'Application'=> 'Записаться на прием',
 
-    'Healthcare at your desk!!' => 'Здоровье на вашем столе!!',
+    'Healthcare at your desk!!' => 'Здоровье на вашем столе',
 
-    'Make an Appointment.' => 'Записаться на прием.',
+    'Make an Appointment.' => 'Записаться на прием',
     'Our Service' => 'НАШ СЕРВИС',
     '24 Hour Support' => '24 Часовая поддержка',
     'Emergency Services' => 'Службы экстренной помощи',
@@ -43,6 +43,6 @@ return [
     'Appointment' => 'Запись на прием',
     'Follow us' => 'Следуй за нами',
     '© Copyright Medilab Theme. All Rights Reserved' => '© Copyright Medilab Theme. Все права защищены',
-    'Doctor\'s appointment' => 'Запись к врачу',
-    'An appointment with a doctor' => 'Запись на прием к врачу',
+    'Doctor\'s appointment' => 'Запись на прием к врачу',
+    'An appointment with a doctor' => '',
 ];

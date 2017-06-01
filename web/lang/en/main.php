@@ -8,9 +8,9 @@ return [
     'Contact' => 'Contact',
     'Application'=> 'Application',
 
-    'Healthcare at your desk!!' => 'Healthcare at your desk!!',
+    'Healthcare at your desk!!' => 'Healthcare at your desk',
 
-    'Make an Appointment.' => 'Make an Appointment.',
+    'Make an Appointment.' => 'Make an Appointment',
     'Our Service' => 'OUR SERVICE',
     '24 Hour Support' => '24 Hour Support',
     'Emergency Services' => 'Emergency Services',
@@ -40,6 +40,6 @@ return [
     'Appointment' => 'Appointment',
     'Follow us' => 'Follow us',
     '© Copyright Medilab Theme. All Rights Reserved' => '© Copyright Medilab Theme. All Rights Reserved',
-    'An appointment with a doctor' => 'An appointment with a doctor',
-    'Doctor\'s appointment' => 'Doctor\'s appointment',
+    'Doctor\'s appointment' => 'An appointment with a doctor',
+    'An appointment with a doctor' => '',
 ];
