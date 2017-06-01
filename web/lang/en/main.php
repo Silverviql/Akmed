@@ -30,6 +30,7 @@ return [
     '321 Awesome Street' => '321 Awesome Street',
     'New York, NY 17022' => 'New York, NY 17022',
     'info@companyname.com' => 'info@companyname.com',
+    'Medical organization for appointment.' => 'Medical organization for appointment.',
     'Choose a medical organization for appointment.' => 'Choose a medical organization for appointment.',
     'About Us' => 'About Us',
     'Quick Links' => 'Quick Links',

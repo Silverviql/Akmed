@@ -1,20 +1,16 @@
 <?php
 
 namespace app\models;
-
 use Yii;
 use yii\db\ActiveRecord;
 
-
-
-class ApplicationForm extends ActiveRecord
+class UslugiTable extends ActiveRecord
 {
-
 
 
     public static function tableName()
     {
-        return 'application';
+        return 'viduslug';
 
     }
 
@@ -26,14 +22,8 @@ class ApplicationForm extends ActiveRecord
     public function attributeLabels()
     {
         return [
-            'nomer' => 'Номер полиса',
 
-            'spec' => 'Врачебная специализация',
-            'uslugi' => 'Вид услуги',
-            'oplata' => 'Вид оплаты',
-
-            'address' => 'Выбор медицинской организации',
-            'problem' => 'Текст проблемы',
+            'name_us' => 'Вид услуги',
 
             /*'verifyCode' => 'Verification Code',*/
         ];
@@ -46,7 +36,7 @@ class ApplicationForm extends ActiveRecord
     {
         return [
 
-            [['nomer', 'spec', 'uslugi', 'oplata', 'address','problem'], 'required'],
+            [['name'], 'required'],
         ];
     }
 

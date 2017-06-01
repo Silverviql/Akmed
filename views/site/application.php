@@ -56,33 +56,31 @@ use yii\db\ActiveRecord;
                             <?= $form->field($model, 'nomer') ?>
 
                             <?php
-                            $authors = \app\models\ApplicationForm::find()->all();
-                            // формируем массив, с ключем равным полю 'id' и значением равным полю 'name'
-                            $items = ArrayHelper::map($authors,'id','spec');
+                            $authors = \app\models\SpecTable::find()->all();
+                            // массив данных из таблицы vidspec
+                            $items = ArrayHelper::map($authors,'name_sp','name_sp');
                             $params = [
-                                'prompt' => 'Укажите автора записи'
+                                'prompt' => 'Выберите специалиста'
                             ];
                             echo $form->field($model, 'spec')->dropDownList($items,$params)
                             ?>
 
                             <?php
-                            $authors = \app\models\ApplicationForm::find()->all();
-                            // формируем массив, с ключем равным полю 'id' и значением равным полю 'name'
-                            $items = ArrayHelper::map($authors,'id','uslugi');
+                            $authors = \app\models\UslugiTable::find()->all();
+                            // массив данных из таблицы viduslug
+                            $items = ArrayHelper::map($authors,'name_us','name_us');
                             $params = [
-                                'prompt' => 'Укажите автора записи'
+                                'prompt' => 'Укажите вид услуг'
                             ];
                             echo $form->field($model, 'uslugi')->dropDownList($items,$params)
                             ?>
 
-                            <?php
-                            $authors = \app\models\ApplicationForm::find()->all();
-                            // формируем массив, с ключем равным полю 'id' и значением равным полю 'name'
-                            $items = ArrayHelper::map($authors,'id','oplata');
-                            $params = [
-                                'prompt' => 'Укажите автора записи'
-                            ];
-                            echo $form->field($model, 'oplata')->dropDownList($items,$params)
+                            <?=
+
+                            $form->field($model, 'oplata')->dropDownList([
+                                'Полис ОМС' => 'Полис ОМС',
+                                'Наличный расчет' => 'Наличный расчет',
+                                'С помощью интеркассы'=>'С помощью интеркассы' ])
                             ?>
 
                             <?= $form->field($model, 'address') ?>
@@ -141,10 +139,12 @@ use yii\db\ActiveRecord;
         <div class="col-lg-9  col-md-8  col-sm-8 col-xs-12 col-md-offset-2">
             <div id="map" style="height: 400px "></div>
 
-                <script src="customSet_controls.js" type="text/javascript"></script>
+            <script src="customSet_controls.js" type="text/javascript"></script>
 
         </div>
     </div>
 </div>
 <!--/ contact-->
+
+
 
