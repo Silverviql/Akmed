@@ -36,6 +36,7 @@ AppAsset::register($this);
                                     <li class=""><a href="#testimonial"><?= Yii::t('main', 'Testimonial')?></a></li>
                                     <li class=""><a href="#contact"><?= Yii::t('main', 'Contact')?></a></li>
                                     <li class=""><a href="http://akmed8294.cloudapp.net/site/application"><?= Yii::t('main', 'Application')?></a></li>
+                                    <li class=""><a href="http://akmed8294.cloudapp.net/site/application"><?= Yii::t('main', 'Application')?></a><img src="/img/logo.png" class="img-responsive" style="width: 140px; margin-top: -16px;"></a></a></li>
                                 </ul>
                             </div>
                         </div>
