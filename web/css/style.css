@@ -85,6 +85,11 @@ banner
     width: 120px !important;
 }
 
+.language-brand img {
+    padding-top: 2px;
+    width: 60px !important;
+}
+
 .navbar-default .navbar-brand, .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
     color: #EA6045;
 }
