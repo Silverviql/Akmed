@@ -26,7 +26,7 @@ AppAsset::register($this);
                                     <span class="icon-bar"></span>
                                     <span class="icon-bar"></span>
                                 </button>
-                                <a class="navbar-brand" href="#"><img src="/img/logo.png" class="img-responsive" style="width: 140px; margin-top: -16px;"></a>
+                                <a class="navbar-brand" href="http://akmed8294.cloudapp.net"><img src="/img/logo.png" class="img-responsive" style="width: 140px; margin-top: -16px;"></a>
                             </div>
                             <div class="collapse navbar-collapse navbar-right" id="myNavbar">
                                 <ul class="nav navbar-nav">
@@ -34,7 +34,7 @@ AppAsset::register($this);
                                     <li class=""><a href="#service"><?= Yii::t('main', 'Services')?></a></li>
                                     <li class=""><a href="#about"><?= Yii::t('main', 'About')?></a></li>
                                     <li class=""><a href="#testimonial"><?= Yii::t('main', 'Testimonial')?></a></li>
-                                    <li class=""><a href="`"><?= Yii::t('main', 'Contact')?></a></li>
+                                    <li class=""><a href="#contact"><?= Yii::t('main', 'Contact')?></a></li>
                                     <li class=""><a href="http://akmed8294.cloudapp.net/site/application"><?= Yii::t('main', 'Application')?></a></li>
                                     <li class="language-brand"><img src="/img/language.png" class="img-responsive" style="width: 140px; margin-top: -16px;"><?= \app\widgets\LangWidget::widget();?></li>
                                 </ul>
@@ -113,9 +113,9 @@ AppAsset::register($this);
                     </div>
                     <div class="info-sec">
                         <ul class="quick-info">
-                            <li><a href="index.html"><i class="fa fa-circle"></i><?= Yii::t('main', 'Home')?></a></li>
+                            <li><a href="#banner"><i class="fa fa-circle"></i><?= Yii::t('main', 'Home')?></a></li>
                             <li><a href="#service"><i class="fa fa-circle"></i><?= Yii::t('main', 'Service')?></a></li>
-                            <li><a href="#contact"><i class="fa fa-circle"></i><?= Yii::t('main', 'Appointment')?></a></li>
+                            <li><a href="http://akmed8294.cloudapp.net/site/application"><i class="fa fa-circle"></i><?= Yii::t('main', 'Appointment')?></a></li>
                         </ul>
                     </div>
                 </div>
