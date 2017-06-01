@@ -34,7 +34,7 @@ AppAsset::register($this);
                                     <li class=""><a href="#service"><?= Yii::t('main', 'Services')?></a></li>
                                     <li class=""><a href="#about"><?= Yii::t('main', 'About')?></a></li>
                                     <li class=""><a href="#testimonial"><?= Yii::t('main', 'Testimonial')?></a></li>
-                                    <li class=""><a href="#contact"><?= Yii::t('main', 'Contact')?></a></li>
+                                    <li class=""><a href="`"><?= Yii::t('main', 'Contact')?></a></li>
                                     <li class=""><a href="http://akmed8294.cloudapp.net/site/application"><?= Yii::t('main', 'Application')?></a></li>
                                     <li class="language-brand"><img src="/img/language.png" class="img-responsive" style="width: 140px; margin-top: -16px;"><?= \app\widgets\LangWidget::widget();?></li>
                                 </ul>
