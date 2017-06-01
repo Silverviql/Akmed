@@ -6,6 +6,7 @@ return [
     'About' => 'О нас',
     'Testimonial' => 'Отзывы',
     'Contact' => 'Контакты',
+    'Application'=> 'Записаться на прием',
 
     'Healthcare at your desk!!' => 'Здоровье на вашем столе!!',
 

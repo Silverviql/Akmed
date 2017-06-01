@@ -6,6 +6,7 @@ return [
     'About' => 'About',
     'Testimonial' => 'Testimonial',
     'Contact' => 'Contact',
+    'Application'=> 'Application',
 
     'Healthcare at your desk!!' => 'Healthcare at your desk!!',
 
