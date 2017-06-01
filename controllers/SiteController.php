@@ -8,6 +8,7 @@ use yii\web\Controller;
 use yii\filters\VerbFilter;
 use app\models\LoginForm;
 use app\models\ContactForm;
+use app\models\ApplicationForm;
 
 class SiteController extends Controller
 {
@@ -76,7 +77,7 @@ class SiteController extends Controller
 
     public function actionApplication()
     {
-        $model = new ContactForm();
+        $model = new ApplicationForm();
 
         if ( $model->load(Yii::$app->request->post()) ) {
             if ($model->save()) {

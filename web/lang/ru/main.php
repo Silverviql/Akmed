@@ -33,7 +33,7 @@ return [
     '321 Awesome Street' => '321 Awesome Street',
     'New York, NY 17022' => 'Нью-Йорк, NY 17022',
     'info@companyname.com' => 'info@companyname.com',
-    'Medical organization for appointment.' => 'Медицинская организация для записи на прием.',
+    'Choose a medical organization for appointment.' => 'Выберите медицинскую организацию для записи на прием.',
     'About Us' => 'О нас',
     'Quick Links' => 'Быстрые ссылки',
     'Home' => 'Главная',

@@ -31,7 +31,7 @@ use yii\db\ActiveRecord;
                 <div class="site-contact">
 
                     <p>
-                        <?= Yii::t('main', 'Medical organization for appointment.')?>
+                        <?= Yii::t('main', 'Choose a medical organization for appointment.')?>
                     </p>
 
                     <div class="row">
@@ -51,42 +51,44 @@ use yii\db\ActiveRecord;
                                 </div>
                             <?php endif;?>
 
-                            <?php $form = ActiveForm::begin(['id' => 'contact-form']); ?>
+                            <?php $form = ActiveForm::begin(['id' => 'application-form']); ?>
+
+                            <?= $form->field($model, 'nomer') ?>
 
                             <?php
-                            $authors = \app\models\ContactForm::find()->all();
+                            $authors = \app\models\ApplicationForm::find()->all();
                             // формируем массив, с ключем равным полю 'id' и значением равным полю 'name'
-                            $items = ArrayHelper::map($authors,'id','status');
+                            $items = ArrayHelper::map($authors,'id','spec');
                             $params = [
                                 'prompt' => 'Укажите автора записи'
                             ];
-                            echo $form->field($model, 'status')->dropDownList($items,$params)
+                            echo $form->field($model, 'spec')->dropDownList($items,$params)
                             ?>
 
                             <?php
-                            $authors = \app\models\ContactForm::find()->all();
+                            $authors = \app\models\ApplicationForm::find()->all();
                             // формируем массив, с ключем равным полю 'id' и значением равным полю 'name'
-                            $items = ArrayHelper::map($authors,'id','status');
+                            $items = ArrayHelper::map($authors,'id','uslugi');
                             $params = [
                                 'prompt' => 'Укажите автора записи'
                             ];
-                            echo $form->field($model, 'status')->dropDownList($items,$params)
+                            echo $form->field($model, 'uslugi')->dropDownList($items,$params)
                             ?>
 
                             <?php
-                            $authors = \app\models\ContactForm::find()->all();
+                            $authors = \app\models\ApplicationForm::find()->all();
                             // формируем массив, с ключем равным полю 'id' и значением равным полю 'name'
-                            $items = ArrayHelper::map($authors,'id','status');
+                            $items = ArrayHelper::map($authors,'id','oplata');
                             $params = [
                                 'prompt' => 'Укажите автора записи'
                             ];
-                            echo $form->field($model, 'status')->dropDownList($items,$params)
+                            echo $form->field($model, 'oplata')->dropDownList($items,$params)
                             ?>
 
-                            <?= $form->field($model, 'subject') ?>
+                            <?= $form->field($model, 'address') ?>
 
 
-                            <?= $form->field($model, 'text')->textarea(['rows' => 6]) ?>
+                            <?= $form->field($model, 'problem')->textarea(['rows' => 6]) ?>
 
                             <?= Html::submitButton('Отправить', ['class' => 'btn btn-success'])?>
 
